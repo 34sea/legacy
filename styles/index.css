@@ -43,7 +43,7 @@ a{
 }
 
 .logoMenu a .le span{
-    color: #ddd;
+    color: #f1f1f1;
     font-size: 13px;
 }
 
@@ -57,7 +57,7 @@ a{
 .infos{
     background-color: #fff;
     height: 0px;
-    padding: 15px 60px;
+    padding: 10px 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,7 +70,7 @@ a{
 }
 
 .infos .redesInfos a img{
-    width: 13px;
+    width: 10px;
 }
 
 header nav ul{
@@ -85,7 +85,7 @@ header nav{
     display: flex;
     align-items: center;
     padding: 0px 60px;
-    background-color: #252525;
+    background-color: #000;
 }
 header nav ul li{
     border: 0px solid black;
@@ -99,7 +99,7 @@ header nav ul li a{
     height: 38px;
     display: flex;
     align-items: center;
-    color: #ddd;
+    color: #f1f1f1;
 }
 
 header nav ul li a:hover{
@@ -115,7 +115,7 @@ header nav ul li a:hover{
 }
 
 .slide{
-    height: calc(100vh - 77px);
+    height: calc(100vh - 64px);
     border: 0px solid black;
     background-image: url(../imgs/BannersNoticias/MAMBAS.webp);
     background-size: 100%;
@@ -129,7 +129,7 @@ header nav ul li a:hover{
     height: calc(100% - 80px);
     width: calc(100% - 120px);
     background: linear-gradient( to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
-    bottom: 0;
+    top: 0;
     left: 0;
     padding: 40px 60px;
     display: flex;
@@ -137,15 +137,17 @@ header nav ul li a:hover{
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
+    transition: all .3s ease;
 }
 
-.slide .textoPublic h2{
+.slide .textoPublic .tituloSlide{
     width: 700px;
     font-size: 2rem;
     color: #ccc;
-    text-decoration: underline;
+    
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
+    transition: all .3s ease;
 }
 
 .slide .textoPublic a{
@@ -170,6 +172,129 @@ header nav ul li a:hover{
 }
 
 .barra{
-    height: 4px;
-    background: linear-gradient( to right, #cd122d, red);
+    height: 0px;
+    background: #cd122d;
+}
+
+.cetas{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0px 60px;
+    background-color: rgba(0, 0, 0, 0);
+    top: 40%;
+    left: 0;
+    height: 50px;
+    width: calc(100% - 120px);
+    z-index: 9999;
+}
+
+.cetas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+.cetas .ceta img{
+    width: 12px;
+}
+
+.cetas .ceta:first-child{
+    transform: rotate(180deg);
+}
+
+.cetas .ceta{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.slide .textoPublic:hover .cetas{
+    visibility: visible;
+}
+
+.slide .textoPublic:hover .tituloSlide{
+    text-decoration: underline;
+    line-height: 45px;
+}
+.slide .textoPublic:hover{
+    position: absolute;
+    height: calc(100% - 80px);
+    width: calc(100% - 120px);
+}
+
+.humburguer{
+    width: 25px;
+    height: 40px;
+    border: 0px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.humburguer span{
+    width: 25px;
+    height: 2px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.humburguer span:nth-child(2){
+    width: 20px;
+    height: 2px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.humburguer span:nth-child(3){
+    width: 15px;
+    height: 2px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.contatosInfos{
+    display: none;
+}
+
+.contatosInfos ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contatosInfos ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contatosInfos ul li a{
+    font-size: 10px;
+    color: #adadad;
+    font-weight: normal;
+}
+
+.linguas{
+    display: none;
+}
+
+.linguas img{
+    width: 10px;
+}
+
+.linguas span{
+    font-size: 13px;
 }
