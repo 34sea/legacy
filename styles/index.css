@@ -25,6 +25,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 0px solid #fff;
+    width: 100%;
 }
 
 .logoMenu a img{
@@ -57,7 +59,7 @@ a{
 .infos{
     background-color: #fff;
     height: 0px;
-    padding: 10px 60px;
+    padding: 20px 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,7 +72,7 @@ a{
 }
 
 .infos .redesInfos a img{
-    width: 10px;
+    width: 11px;
 }
 
 header nav ul{
@@ -78,6 +80,8 @@ header nav ul{
     list-style: none;
     align-items: center;
     gap: 20px;
+    z-index: 999999;
+    /* box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08); */
 }
 
 header nav{
@@ -86,12 +90,16 @@ header nav{
     align-items: center;
     padding: 0px 60px;
     background-color: #000;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 header nav ul li{
     border: 0px solid black;
     height: 45px;
     display: flex;
     align-items: center;
+    text-transform: capitalize;
 }
 header nav ul li a{
     font-size: 13px;
@@ -128,7 +136,7 @@ header nav ul li a:hover{
     position: absolute;
     height: calc(100% - 80px);
     width: calc(100% - 120px);
-    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
     top: 0;
     left: 0;
     padding: 40px 60px;
@@ -137,7 +145,7 @@ header nav ul li a:hover{
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
-    transition: all .3s ease;
+    transition: all .4s ease;
 }
 
 .slide .textoPublic .tituloSlide{
@@ -168,12 +176,12 @@ header nav ul li a:hover{
 
 .slide .textoPublic a img{
     width: 10px;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
 }
 
 .barra{
     height: 0px;
-    background: #cd122d;
+    background: #fff;
 }
 
 .cetas{
@@ -216,6 +224,10 @@ header nav ul li a:hover{
     cursor: pointer;
 }
 
+.slide{
+    padding: 0px 0px;
+}
+
 .slide .textoPublic:hover .cetas{
     visibility: visible;
 }
@@ -226,12 +238,14 @@ header nav ul li a:hover{
 }
 .slide .textoPublic:hover{
     position: absolute;
-    height: calc(100% - 80px);
+    height: calc(100% - 160px);
     width: calc(100% - 120px);
+    padding: 80px 60px;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
 }
 
 .humburguer{
-    width: 25px;
+    width: 28px;
     height: 40px;
     border: 0px solid #fff;
     display: flex;
@@ -244,24 +258,28 @@ header nav ul li a:hover{
 
 .humburguer span{
     width: 25px;
-    height: 2px;
+    height: 1px;
     background-color: #f1f1f1;
     border-radius: 10px;
 }
 
 .humburguer span:nth-child(2){
     width: 20px;
-    height: 2px;
     background-color: #f1f1f1;
     border-radius: 10px;
 }
 
 .humburguer span:nth-child(3){
     width: 15px;
-    height: 2px;
     background-color: #f1f1f1;
     border-radius: 10px;
 }
+
+.humburguer:hover span{
+    width: 100%;
+    transition: all .3s ease;
+}
+
 
 .contatosInfos{
     display: none;
@@ -287,14 +305,159 @@ header nav ul li a:hover{
     font-weight: normal;
 }
 
-.linguas{
-    display: none;
+.linguas ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 0px solid black;
+    height: 35px;
+}
+
+.linguas ul li .logins{
+    font-size: 12px;
+    padding: 5px 15px;
+    border: 1px solid  black;
+    font-size: 10px;
+}
+
+.linguas ul li .con{
+    font-size: 12px;
+    padding: 5px 12px;
+    border: 1px solid  black;
+    background-color: #000;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
 }
 
 .linguas img{
-    width: 10px;
+    width: 13px;
 }
 
 .linguas span{
     font-size: 13px;
+}
+
+.pesquisar img{
+    width: 15px;
+}
+
+.pesquisar{
+    cursor: pointer;
+}
+
+.escrever{
+    display: flex;
+    border: 0px solid #fff;
+    gap: 10px;
+    align-items: center;
+}
+
+.menuLogo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.barraVertical{
+    height: 12px;
+    width: 0px;
+    background-color: #999;
+
+}
+
+.entrar img{
+    width: 15px;
+}
+
+.escrever a{
+    visibility: hidden;
+}
+
+/*------------------------------------------------------------*/
+
+.corpo{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.corpo section:first-child{
+    width: 80%;
+    border: 0px solid black;
+    min-height: 200px;
+    
+}
+.corpo section:last-child{
+    width: 19%;
+    border: 1px solid black;
+    min-height: 200px;
+}
+.destaque{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    border-bottom: 1px solid #aaa;
+    padding: 10px 0px;
+}
+.destaque .nots{
+    width: 49.5%;
+    height: 300px;
+    border: 0px solid black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.corpo h2{
+    font-size: 1.5rem;
+    color: #263238;
+}
+
+.destaque .textoTitulo{
+    position: absolute;
+    height: calc(100% - 40px);
+    width: calc(100% - 30px);
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+    top: 0;
+    left: 0;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    transition: all .3s ease;
+}
+
+.parceiros{
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 40px;
+}
+
+.destaque .textoTitulo a{
+    color: #fff;
+}
+
+.dataLance{
+    color: #fff;
+    font-size: 10px;
+}
+
+.destaque .nots .textoTitulo:hover{
+    position: absolute;
+    height: calc(100% - 120px);
+    width: calc(100% - 30px);
+    padding: 60px 15px;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+}
+
+.destaque .nots .textoTitulo:hover a{
+    text-decoration: underline;
 }
