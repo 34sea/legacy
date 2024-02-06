@@ -259,6 +259,7 @@ header nav ul li a:hover{
     justify-content: center;
     gap: 5px;
     cursor: pointer;
+    display: none;
 }
 
 .humburguer span{
@@ -711,13 +712,13 @@ header nav ul li a:hover{
 
 .classiResult{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
     padding: 20px 60px;
 }
 
 .ligasClassificacao{
-    width: 70%;
+    width: 100%;
     display: flex;
     gap: 10px;
     justify-content: space-between;
@@ -727,6 +728,7 @@ header nav ul li a:hover{
     width: 29%;
     min-height: 500px;
     border: 1px solid #ccc;
+    display: none;
 }
 
 .ligaCla{
@@ -816,4 +818,141 @@ header nav ul li a:hover{
     display: flex;
     flex-direction: column;
     gap: 2px;
+}
+
+.mercado{
+    padding: 10px 60px;
+    margin-bottom: 20px;
+}
+
+.mercado h2{
+    font-size: 1rem;
+}
+
+.notMercado{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border: 0px solid black;
+}
+
+.destaqueMercado{
+    width: 600px;
+    min-height: 400px;
+    border: 0px solid black;
+    background-image: url(../imgs/Noticias/GUIMA-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.destaqueMercado .textoDestaqueMercado{
+    position: absolute;
+    height: calc(100% - 80px);
+    width: calc(100% - 120px);
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+    top: 0;
+    left: 0;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    transition: all .4s ease;
+}
+
+.destaqueMercado .textoDestaqueMercado .textoTituloDestaque{
+    position: absolute;
+    height: calc(100% - 40px);
+    width: calc(100% - 30px);
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    top: 0;
+    left: 0;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    transition: all .3s ease;
+}
+
+.destaqueMercado .textoDestaqueMercado .textoTituloDestaque a{
+    color: #fff;
+}
+
+.destaqueMercado .textoDestaqueMercado .textoTituloDestaque .dataLanceDestaque{
+    color: #fff;
+    font-size: 10px;
+}
+
+.destaqueMercado .textoDestaqueMercado .textoTituloDestaque:hover{
+    position: absolute;
+    height: calc(100% - 120px);
+    width: calc(100% - 30px);
+    padding: 60px 15px;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+}
+
+.destaqueMercado .textoDestaqueMercado .textoTituloDestaque:hover a{
+    text-decoration: underline;
+}
+
+.outrasNotMercado{
+    list-style: none;
+    display: flex;
+    width: calc(100% - 590px);
+    border: 0px solid black;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.outrasNotMercado li{
+    width: 250px;
+    min-height: 200px;
+    border: 0px solid black;
+}
+
+.outrasNotMercado li img{
+    width: 100%;
+}
+
+.outrasNotMercado li a{
+    font-size: 14px;
+    color: #222;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.jogadoresEquipe{
+    padding: 20px 60px;
+}
+
+.jogadoresEquipe ul li{
+    max-width: 300px!important;
+    min-width: 300px!important;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.jogadoresEquipe ul{
+    padding: 20px 5px;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+}
+
+.textoPubliJogador{
+    position: absolute;
 }
