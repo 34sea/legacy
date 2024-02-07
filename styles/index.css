@@ -107,7 +107,7 @@ header nav ul li{
 }
 header nav ul li a{
     font-size: 12px;
-    padding: 0px 15px;
+    padding: 5px 15px;
     height: 38px;
     display: flex;
     align-items: center;
@@ -115,9 +115,14 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #222;
     transition: all 0.5s ease;
+}
+
+.destaqueLink{
+    margin-top: 5px;
+    border-bottom: 5px solid #fff!important;
 }
 
 .logoMenu{
