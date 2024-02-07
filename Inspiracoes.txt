@@ -17,3 +17,10 @@ https://pt.besoccer.com/
 
 FMF
 https://www.fmf.co.mz/
+
+paleta de cores
+
+https://color.adobe.com/create/color-wheel
+
+para pegar shadows
+https://getcssscan.com/css-box-shadow-examples

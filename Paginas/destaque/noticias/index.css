@@ -1,0 +1,12 @@
+.notEspecifico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 60px;
+}
+
+.corpoNotiEspecifo{
+    max-width: 600px!important;
+    min-width: 600px!important;
+    border: 1px solid black;
+}

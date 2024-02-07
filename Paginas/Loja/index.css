@@ -1,0 +1,205 @@
+.slide{
+    height: calc(100vh - 150px);
+    border: 0px solid black;
+    background-image: url(../../imgs/BannersNoticias/b1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    margin: 20px 60px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.slide .textoPublic{
+    position: absolute;
+    height: calc(100% - 80px);
+    width: calc(100% - 120px);
+    /* background: linear-gradient( to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+    top: 0;
+    left: 0;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    transition: all .4s ease;
+}
+
+.slide .textoPublic .tituloSlide{
+    width: 600px;
+    font-size: 1.5rem;
+    color: #fff;
+    
+    text-align: center;
+    line-height: 30px;
+    transition: all .3s ease;
+}
+
+.slide .textoPublic a{
+    display: flex;
+    align-items: center;
+    /* background-color: #cd122d; */
+    color: white;
+    gap: 10px;
+    border: 0px solid #fff;
+    padding: 0px 15px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.slide .textoPublic a span{
+    color: #fff;
+}
+
+.slide .textoPublic a img{
+    width: 10px;
+    transform: rotate(90deg);
+}
+
+.barra{
+    height: 0px;
+    background: #fff;
+}
+
+.cetas{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0px 60px;
+    background-color: rgba(0, 0, 0, 0);
+    top: 40%;
+    left: 0;
+    height: 50px;
+    width: calc(100% - 120px);
+    z-index: 9999;
+}
+
+.cetas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+.cetas .ceta img{
+    width: 12px;
+}
+
+.cetas .ceta:first-child{
+    transform: rotate(180deg);
+}
+
+.cetas .ceta{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.slide{
+    padding: 0px 0px;
+}
+
+.slide .textoPublic:hover .cetas{
+    visibility: visible;
+}
+
+.slide .textoPublic:hover .tituloSlide{
+    text-decoration: underline;
+    line-height: 45px;
+}
+.slide .textoPublic:hover{
+    position: absolute;
+    height: calc(100% - 160px);
+    width: calc(100% - 120px);
+    padding: 80px 60px;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+}
+
+.produtos{
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.produtos ul li{
+    border: 1px solid #ddd;
+    padding: 20px 10px;
+    max-width: 170px!important;
+    max-height: 200px!important;
+    min-width: 170px!important;
+    min-height: 200px!important;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fff;
+}
+
+.produtos ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    
+}
+
+.produtos ul li a img{
+    width: 120px;
+}
+
+.produtos ul li a .descricaoProduto{
+    text-align: center;
+    border: 0px solid black;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.produtos ul li a .preco{
+    text-align: center;
+    border: 0px solid black;
+    font-size: 10px;
+    color: #aaa;
+}
+
+
+.produtos ul{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+main{
+    display: relative;
+}
+
+
+
+.produtos ul li:hover a img{
+    width: 130px;
+    transition: all .3s ease;
+}
+
+.produtos ul li:hover .descricaoProduto{
+    text-decoration: underline;
+}
+
+.produtos ul li:hover .preco{
+    color: #ca0f08;
+    font-weight: 700;
+}
