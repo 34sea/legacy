@@ -135,22 +135,23 @@ header nav ul li a:hover{
 .slide{
     height: calc(100vh - 150px);
     border: 0px solid black;
-    background-image: url(../../imgs/BannersNoticias/b1.png);
+    background-image: url(../imgs/BannersNoticias/b1.png);
     background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    position: relative!important;
     display: flex;
     margin: 20px 60px;
     border-radius: 5px;
     overflow: hidden;
+    transition: all .5s ease;
 }
 
 .slide .textoPublic{
     position: absolute;
     height: calc(100% - 80px);
     width: calc(100% - 120px);
-    /* background: linear-gradient( to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
     top: 0;
     left: 0;
     padding: 40px 60px;
@@ -503,6 +504,11 @@ header nav ul li a:hover{
     font-weight: 700;
 }
 
+.lastNot li:hover a{
+    color: #ca0f08;
+    transition: all .3s ease;
+}
+
 .dataUltima{
     font-size: 9px;
     color: #c6c6c6;
@@ -572,6 +578,16 @@ header nav ul li a:hover{
     text-align: justify;
 }
 
+.outrasNoticias li:hover a{
+    color: #ca0f08;
+    transition: all .3s ease;
+}
+
+.outrasNoticias li:hover img{
+    width: 95%;
+    transition: all .3s ease;
+}
+
 .fonte{
     display: flex;
     font-size: 9px;
@@ -601,6 +617,7 @@ header nav ul li a:hover{
     gap: 20px;
     align-items: flex-start;
     padding: 20px 0px;
+    border: 0px solid black;
 }
 
 .partida li{
@@ -724,6 +741,7 @@ header nav ul li a:hover{
 .classiResult{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     gap: 10px;
     padding: 20px 60px;
 }
@@ -939,6 +957,16 @@ header nav ul li a:hover{
     text-align: justify;
 }
 
+.outrasNotMercado li:hover a{
+    color: #ca0f08;
+    transition: all .4s ease;
+}
+
+.outrasNotMercado li:hover img{
+    width: 95%;
+    transition: all .4s ease;
+}
+
 .jogadoresEquipe{
     padding: 20px 60px;
 }
@@ -968,7 +996,7 @@ header nav ul li a:hover{
     position: absolute;
     height: calc(100% - 0px);
     width: calc(100% - 0px);
-    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1089,4 +1117,50 @@ footer ul li a{
 
 .parceiros a img{
     width: 80px;
+}
+
+.barraPesquisa{
+    height: 0px;
+    background-color: #ca0f08;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+    left: 0;
+    top: 40px;
+    overflow: hidden;
+    width: 100%;
+    z-index: 9999999;
+    visibility: hidden;
+}
+
+.barraPesquisa form{
+    background-color: #eee;
+    width: 500px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    
+    overflow: hidden;
+    flex-wrap: nowrap!important;
+}
+
+.barraPesquisa form input[type="search"]{
+    width: calc(100% - 22px);
+    height: 25px;
+    background-color: #eee;
+    border: 0px;
+    outline: none;
+    text-indent: 10px;
+    font-size: 10px;
+}
+
+.barraPesquisa form img{
+    width: 15px;
+    margin-right: 9px;
+    cursor: pointer;
 }

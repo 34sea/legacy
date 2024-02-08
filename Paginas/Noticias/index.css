@@ -1,0 +1,6 @@
+.outrasNoticias{
+    border: 0px solid black!important;
+    max-height: 460px;
+    overflow: hidden;
+    transition: all .3s ease;
+}
