@@ -991,6 +991,18 @@ header nav ul li a:hover{
     gap: 10px;
     list-style: none;
 }
+.jogadoresEquipe ul::-webkit-scrollbar{
+    height: 4px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.jogadoresEquipe ul::-webkit-scrollbar-thumb{
+    background-color: #aaa;
+    width: 40px;
+    border-radius: 10px;
+}
 
 .textoPubliJogador{
     position: absolute;
@@ -1163,4 +1175,169 @@ footer ul li a{
     width: 15px;
     margin-right: 9px;
     cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+.partidkj{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.jogosProx{
+    border: 0px solid black;
+}
+
+.jogosProx .partida{
+    border: 0px solid black;
+}
+
+.alkGame{
+    width: calc(100% - 300px);
+}
+
+.jogosProx .partida li{
+    width: 360px;
+    min-height: 280px;
+    align-items: center;
+}
+
+.jogosProx .partida li .corpoPartida{
+    min-height: 220px;
+    border: 0px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.jogosProx .partida{
+    gap: 5px;
+}
+
+.partidkj  h2{
+    font-size: 13px;
+}
+
+.proximosEventos{
+    width: calc(270px - 0px);
+    height: 200px;
+    margin-top: 30px;
+    padding: 0px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 4px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: 1px solid #ccc;
+    border-radius: 5px; */
+}
+
+.caledarioEventos{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #eee;
+}
+
+.caledarioEventos .divCal{
+    background-color: #ca0f08;
+    height: 40px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caledarioEventos .divCal img{
+    width: 14px;
+}
+.caledarioEventos h2{
+    color: #555;
+    font-size: 12px;
+}
+
+.ultimoJogoDesputado{
+    display: none;
+}
+
+.mesEvento{
+    width: 100%;
+    border: 0px solid black;
+    margin-top: 15px;
+}
+
+.mesEvento h3{
+    font-size: 12px;
+    text-align: center;
+}
+
+.headerDias{
+    margin-top: 10px;
+
+}
+
+.headerDias ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10px;
+    padding: 10px 15px;
+    background-color: #eee;
+    border-bottom: 1px solid #aaa;
+}
+
+.headerDias ul li{
+    font-size: 10px;
+    font-weight: 700;
+    color: #555;
+}
+
+.dias{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.dias ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    padding: 10px 15px;
+}
+
+.dias ul li{
+    font-size: 10px;
+}
+
+.eventosDestques{
+    background-color: #ca0f08;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.eventosDestques:hover{
+    background-color: #adadad;
+    color: #000;
+    transition: all .3s ease;
+}
+
+.oEvento{
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+section{
+    margin-top: 10px;
+}
+
+section:first-child{
+    margin-top: 0px;
 }
