@@ -214,3 +214,117 @@ ul{
 .cardRe:last-child{
     color: red;
 }
+
+.cardJogo{
+    height: 300px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.finalizado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.finalizado img{
+    width: 50px;
+}
+
+.imgsEquipes{
+    /* height: 100px;
+    width: 100px;
+    border: 4px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.pintura{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: -5px;
+    bottom: 0px;
+    border-radius: 100%;
+    border: 4px solid #ca0f08;
+    display: none;
+    z-index: 999;
+}
+
+.coberNm{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 13px;
+    gap: 10px;
+}
+
+.coberNm:last-child{
+    flex-direction: row-reverse;
+}
+
+.descriJogos div{
+    text-align: center;
+}
+
+.descriJogos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ligaTaca, .dataEvento{
+    font-size: 14px;
+    color: #777;
+}
+
+.resulatadoJogo{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.dataEvento{
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.barraFinalizado{
+    height: 20px;
+    width: 100px;
+    background-color: #ca0f08;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+
+}
+
+.estatisticasDaPartida{
+    min-height: 400px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+}
+
+.estatisticasDaPartida .headerEstatisticasGerais{
+    height: 20px;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.estatisticasDaPartida .headerEstatisticasGerais h2{
+    font-size: 14px;
+}
