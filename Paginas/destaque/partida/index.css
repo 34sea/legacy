@@ -310,12 +310,11 @@ ul{
 }
 
 .estatisticasDaPartida{
-    min-height: 400px;
+    min-height: 200px;
     margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
-    display: none;
 }
 
 .estatisticasDaPartida .headerEstatisticasGerais{
@@ -327,4 +326,164 @@ ul{
 
 .estatisticasDaPartida .headerEstatisticasGerais h2{
     font-size: 14px;
+}
+
+.golos{
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 5px;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.headerGolos{
+    height: 30px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.headerGolos h2{
+    font-size: 14px;
+}
+
+.golos ul li{
+    border-bottom: 1px solid #ccc;
+    min-height: 5px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.golos ul li:last-child{
+    border: 0px;
+}
+
+.imgGolP{
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgGolP img{
+    width: 150%;
+}
+
+.conteudoGol img{
+    width: 10px;
+}
+
+.nomeGolo span{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.nomeAssis span{
+    font-size: 10px;
+    color: #777;
+    font-weight: 700;
+}
+
+.conteuGolos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+}
+
+.minutoConteudo{
+    font-size: 12px;
+    color: #ca0f08;
+    font-weight: 700;
+}
+
+.reversoGolos{
+    flex-direction: row-reverse;
+}
+
+.reversoGolos .conteuGolos{
+    border: 0px solid black;
+    flex-direction: row-reverse;
+    width: 70%;
+}
+
+.estatisticasDaPartida ul li{
+    border-bottom: 1px solid #ccc;
+    min-height: 5px;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.estatisticasDaPartida ul li h2{
+    font-size: 12px;
+    position: absolute;
+    top: 7px;
+    left: 37%;
+}
+
+.posseDeBola{
+    display: flex;
+    border: 0px solid black;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.equipePosse{
+    border-radius: 10px;
+    height: 10px;
+    border: 0px solid #ccc;
+    width: 41%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.equipePosse:first-child{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: calc(100% - 41%);
+    background-color: #ca0f08;
+}
+
+.equipePosse:last-child{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #099259;
+    justify-content: flex-end;
+    
+}
+
+.percentagemPosse{
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    left: 0px;
+    top: -18px;
+    border-radius: 10px;
+    background-color: #ca0f08;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #fff;
+}
+
+.equipePosse:last-child .percentagemPosse{
+    background-color: rgba(99, 99, 99, 0);
+    color: #222;
+    font-weight: 700;
+}
+
+.posseDeBola{
+    margin-top: 10px;
 }
